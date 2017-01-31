@@ -1,51 +1,32 @@
 fontstyle
 =========
 
-| using terminal often? well, as you know output can be hard to read.
-| like me, maybe you need something to break up the text? you know, make it stand out?
-| this module is for you! add some formatting to strings to make for easier printing!
-
-
-requirements
-------------
-
-| built using python 2.7. 
+using terminal often? find it hard to read? maybe you need something to break up the text. you know, make it stand out? this module is for you! add some formatting to strings to make for easier printing!
 
 
 installation
 ------------
 
-| supports package install using github and pypi
-|
 .. code-block:: console
-    
-    $ pip install fontstyle --upgrade
 
+    $ pip install fontstyle --upgrade
 
 .. code-block:: console
 
     $ git clone https://github.com/gellel/fontstyle.git
     $ cd fontstyle
     $ python setup.py install
-    
+
 
 quick test
 ----------
 
-| accepts multiple arguments. see documentation for formatting.
-|
 .. code-block:: console
 
-    $ python -m fontstyle '{hello world}(bold/red)'
+    $ python -m fontstyle '{hello}(bold/red)' '{world}(bold/blue)'
 
 
-authors
--------
+requirements
+------------
 
-| github / `@gellel <https://github.com/gellel/>`_
-
-
-documentation
--------------
-
-| `fontstyle methods <https://github.com/gellel/fontstyle/tree/master/docs>`_
+built using python 2.7. support for python 3+ may be limited.
