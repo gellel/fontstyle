@@ -1,12 +1,56 @@
 Metadata-Version: 1.1
 Name: fontstyle
-Version: 1.0.6
+Version: 1.0.7
 Summary: Simplifies formatting terminal output using Python.
 Home-page: https://github.com/gellel/fontstyle/
 Author: gellel
 Author-email: lindsay.gelle@gmail.com
 License: Type license() to see the full license text
-Description: UNKNOWN
+Description: fontstyle
+        =========
+        
+        | using terminal often? well, as you know output can be hard to read.
+        | like me, maybe you need something to break up the text? you know, make it stand out?
+        | this module is for you! add some formatting to strings to make for easier printing!
+        
+        
+        installation
+        ------------
+        
+        | supports package install using github and pypi
+        |
+        .. code-block:: console
+            
+            $ pip install fontstyle --upgrade
+        
+        
+        .. code-block:: console
+        
+            $ git clone https://github.com/gellel/fontstyle.git
+            $ cd fontstyle
+            $ python setup.py install
+            
+        
+        quick test
+        ----------
+        
+        | accepts multiple arguments. see documentation for formatting.
+        |
+        .. code-block:: console
+        
+            $ python -m fontstyle '{hello world}(bold/red)'
+        
+        
+        authors
+        -------
+        
+        | github / `@gellel <https://github.com/gellel/>`__
+        
+        
+        documentation
+        -------------
+        
+        | `fontstyle methods <https://github.com/gellel/fontstyle/tree/master/docs>`__
 Keywords: ansi,color,colour,console,formatting,logging,terminal,terminal colour,font,strings,fontstyle,style
 Platform: UNKNOWN
 Classifier: Development Status :: 4 - Beta

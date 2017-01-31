@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 from setuptools import setup, find_packages
 from codecs import open
 import os
 
 name = 'fontstyle'
-author = email = source = version = description = long_description = None
+author = email = source = version = description = long_description = readme = None
 
 with open(os.path.join(name, '__init__.py'), encoding = 'utf-8') as f:
 	for line in f:
@@ -25,19 +24,28 @@ with open(os.path.join(name, '__init__.py'), encoding = 'utf-8') as f:
 		elif None not in (version, author, email, source, description, long_description):
 			break
 
+
+with open('README.rst', encoding = 'utf-8') as f:
+    readme = f.read().strip()
+
+
 setup(
 	name = name,
-	version = str(version),
-	license = str(license),
-	description = str(description),
-	long_description = str(long_description),
-	author = str(author),
-	author_email = str(email),
-	url = str(source),
-	keywords = ['ansi', 'color', 'colour', 'console', 'formatting', 
-		'logging', 'terminal', 'terminal colour', 'font', 'strings', 'fontstyle', 'style'],
+	version = version,
+	license = license,
+	description = description,
+    long_description = readme,
+	author = author,
+	author_email = email,
+	url = source,
+	include_package_data = True,
 	packages = [name],
 	install_requires = ['setuptools'],
+	keywords = [
+		'ansi', 'color', 'colour', 'console', 'formatting', 
+		'logging', 'terminal', 'terminal colour', 
+		'font', 'strings', 'fontstyle', 'style'
+	],
 	classifiers = [
 		'Development Status :: 4 - Beta',
 		'Intended Audience :: Developers',
