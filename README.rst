@@ -7,9 +7,13 @@ using terminal often? find it hard to read? maybe you need something to break up
 installation
 ------------
 
+pip install
+
 .. code-block:: console
 
     $ pip install fontstyle --upgrade
+
+git install
 
 .. code-block:: console
 
@@ -29,4 +33,4 @@ quick test
 requirements
 ------------
 
-built using python 2.7. support for python 3+ may be limited.
+python 2.7
