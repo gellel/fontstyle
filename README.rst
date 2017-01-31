@@ -10,7 +10,7 @@ requirements
 ------------
 
 | built using python 2.7. 
-|
+
 
 installation
 ------------
