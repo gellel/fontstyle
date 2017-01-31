@@ -30,6 +30,9 @@ quick test
 usage
 -----
 
+|fontstyles module accepts empty arguments in all functions. 
+|empty arguments for most functions return example output.
+
 **fontstyle.apply**
 
 *adds formatting to the entire argument string.*
@@ -177,7 +180,3 @@ usage
     >>> fontstyle.options()
     ['BOLD', 'RED', ...]
     
-notes
------
-
-module methods all accept empty function calls. creates example output to provide in terminal examples.
