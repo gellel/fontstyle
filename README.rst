@@ -10,7 +10,7 @@ installation
 ------------
 
 | supports package install using github and pypi
-
+|
 .. code-block:: console
     
     $ pip install fontstyle --upgrade
@@ -27,7 +27,7 @@ quick test
 ----------
 
 | accepts multiple arguments. see documentation for formatting.
-
+|
 .. code-block:: console
 
     $ python fontstyle '{hello world}(bold/red)'
@@ -36,7 +36,7 @@ quick test
 authors
 -------
 
-| `@gellel <https://github.com/gellel/>`__
+| github / `@gellel <https://github.com/gellel/>`__
 
 
 documentation
