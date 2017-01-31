@@ -1,3 +1,6 @@
+.. role:: red
+
+
 fontstyle
 =========
 Terminal strings can be hard to read. Add some formatting!
@@ -38,5 +41,6 @@ adding formatting to entire string
     >>> fontstyle.apply('HELLO', 'bold')
     '\033[91mHELLO\033[0m'
     
+    :red:`HELLO`
 
 
