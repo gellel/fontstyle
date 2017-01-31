@@ -5,7 +5,7 @@ from codecs import open
 import os
 
 name = 'fontstyle'
-author = email = source = version = description = long_description = readme = None
+author = email = source = version = description = None
 
 with open(os.path.join(name, '__init__.py'), encoding = 'utf-8') as f:
 	for line in f:
@@ -19,15 +19,14 @@ with open(os.path.join(name, '__init__.py'), encoding = 'utf-8') as f:
 			source = line.split('=')[1].strip().replace('"', '').replace("'", '')
 		elif line.strip().startswith('__description__'):
 			description = line.split('=')[1].strip().replace('"', '').replace("'", '')
-		elif line.strip().startswith('__long_description__'):
-			long_description = line.split('=')[1].strip().replace('"', '').replace("'", '')
-		elif None not in (version, author, email, source, description, long_description):
+		elif None not in (version, author, email, source, description):
 			break
-
 
 with open('README.rst', encoding = 'utf-8') as f:
     readme = f.read().strip()
 
+with open('LICENSE', encoding = 'utf-8') as f:
+	license = f.read().strip()
 
 setup(
 	name = name,
