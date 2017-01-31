@@ -7,7 +7,7 @@ using terminal often? find it hard to read? maybe you need something to break up
 installation
 ------------
 
-**pip**
+**pip install**
 
 *using command line. requires pip*
 
@@ -16,7 +16,7 @@ installation
     $ pip install fontstyle --upgrade
 
 
-**git**
+**git install**
 
 *using command line. requires git*
 
@@ -41,4 +41,17 @@ quick test
 requirements
 ------------
 
-python 2.7
+python 2.7+
+
+
+documentation
+-------------
+
+`@api <https://github.com/gellel/fontstyle/tree/master/docs/>`_.
+
+
+authors
+-------
+
+`@gellel <https://github.com/gellel/>`_.
+
