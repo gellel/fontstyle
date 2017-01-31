@@ -1,9 +1,9 @@
 fontstyle
 =========
 
-| using terminal often? well, i think that the output can be hard to read.
+| using terminal often? well, as you know output can be hard to read.
 | like me, maybe you need something to break up the text? you know, make it stand out?
-| this module is for you! add some formatting for easier printing!
+| this module is for you! add some formatting to strings to make for easier printing!
 
 
 installation
