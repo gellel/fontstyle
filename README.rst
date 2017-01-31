@@ -33,8 +33,10 @@ usage
 
 adding formatting to entire string
 
-.. role:: red
 .. code-block:: python
 
-    >>> fontstyle.apply('hello', 'bold')
-    :red:`hello`
+    >>> fontstyle.apply('HELLO', 'bold')
+    '\033[91mHELLO\033[0m'
+    
+
+
