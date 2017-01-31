@@ -5,13 +5,13 @@ Terminal strings can be hard to read. Add some formatting!
 installation
 ------------
 
-pip install
+**pip**
 
 .. code-block:: console
     
     $ pip install fontstyle --upgrade
 
-git install
+**git**
 
 .. code-block:: console
 
@@ -95,7 +95,7 @@ usage
 
 .. code-block:: python
     
-    >>> fontstyle.preserve('{HELLO}(RED) \033[1m\033[91mWORLD\033[0m')
+    >>> fontstyle.normalize('{HELLO}(RED) \033[1m\033[91mWORLD\033[0m')
     'HELLO \033[1m\033[91mWORLD\033[0m'
 
 **fontstyle.strip**
@@ -104,8 +104,26 @@ usage
 
 .. code-block:: python
     
-    >>> fontstyle.preserve('{HELLO}(RED) \033[1m\033[91mWORLD\033[0m')
+    >>> fontstyle.strip('{HELLO}(RED) \033[1m\033[91mWORLD\033[0m')
     'HELLO WORLD'
+
+**fontstyle.pretty**
+
+*adds formatting to strings contained in 'beautifcation' syntax.*
+
+.. code-block:: python
+    
+    >>> fontstyle.pretty('{HELLO}(RED)')
+    '\033[91mWORLD\033[0m'
+
+**fontstyle.ugly**
+
+*removes all formatting from argument string.*
+
+.. code-block:: python
+    
+    >>> fontstyle.ugly('\033[91mWORLD\033[0m')
+    'HELLO'
     
 
     
