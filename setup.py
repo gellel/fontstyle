@@ -5,31 +5,35 @@ from codecs import open
 import os
 
 name = 'fontstyle'
-author = email = source = version = description = None
 
-def read (*args):
-	return open(os.path.join(*[os.path.dirname(__file__)] + list(args)), encoding = 'utf-8').read().strip()
+author = email = source = version = license = description = None
 
-for i in read(name, '__init__.py').splitlines():
-	if i.strip().startswith('__version__'):
-		version = i.split('=')[1].strip().replace('"', '').replace("'", '')
-	elif i.strip().startswith('__author__'):
-		author = i.split('=')[1].strip().replace('"', '').replace("'", '')
-	elif i.strip().startswith('__email__'):
-		email = i.split('=')[1].strip().replace('"', '').replace("'", '')
-	elif i.strip().startswith('__source__'):
-		source = i.split('=')[1].strip().replace('"', '').replace("'", '')
-	elif i.strip().startswith('__description__'):
-		description = i.split('=')[1].strip().replace('"', '').replace("'", '')
-	elif None not in (version, author, email, source, description):
-		break
+with open('README.rst', encoding = 'utf-8') as f:
+    readme = f.read().strip()
+
+with open(os.path.join(name, '__init__.py'), encoding = 'utf-8') as f:
+	for i in f:
+		if i.strip().startswith('__version__'):
+			version = i.split('=')[1].strip().replace('"', '').replace("'", '')
+		elif i.strip().startswith('__author__'):
+			author = i.split('=')[1].strip().replace('"', '').replace("'", '')
+		elif i.strip().startswith('__email__'):
+			email = i.split('=')[1].strip().replace('"', '').replace("'", '')
+		elif i.strip().startswith('__source__'):
+			source = i.split('=')[1].strip().replace('"', '').replace("'", '')
+		elif i.strip().startswith('__license__'):
+			license = i.split('=')[1].strip().replace('"', '').replace("'", '')
+		elif i.strip().startswith('__description__'):
+			description = i.split('=')[1].strip().replace('"', '').replace("'", '')
+		elif None not in (version, author, email, source, description):
+			break
 
 setup(
 	name = name,
 	version = version,
-	license = read('LICENSE'),
+	license = license,
 	description = description,
-    long_description = read('README.rst'),
+    long_description = readme,
 	author = author,
 	author_email = email,
 	url = source,
