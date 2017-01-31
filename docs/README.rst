@@ -1,5 +1,38 @@
-usage
------
+constants
+---------
+
+fontstyles modules has a few referrential constants. these generally contain escape sequences for ansi formatting.
+
+**fontstyle.COLORS**
+
+*dictionary reference for colour escape sequences*
+
+.. code-block:: python
+
+    >>> fontstyle.COLORS
+    { 'BLACK': '\033[30m', ... }
+
+**fontstyle.FORMATTING**
+
+*dictionary reference for font weights and styling escape sequences*
+
+.. code-block:: python
+
+    >>> fontstyle.FORMATTING
+    { 'BLINK': '\033[5m', ... }
+
+**fontstyle.STYLES**
+
+*dictionary reference for both font colours and styling escape sequences*
+
+.. code-block:: python
+
+    >>> fontstyle.STYLES
+    { 'BLACK': '\033[30m', ..., 'BLINK': '\033[5m', ... }
+
+
+methods
+-------
 
 fontstyles module accepts empty arguments in listed api. empty arguments for most functions return example output to assist in formatting string output.
 
