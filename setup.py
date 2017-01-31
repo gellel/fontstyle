@@ -7,33 +7,29 @@ import os
 name = 'fontstyle'
 author = email = source = version = description = None
 
-with open(os.path.join(name, '__init__.py'), encoding = 'utf-8') as f:
-	for line in f:
-		if line.strip().startswith('__version__'):
-			version = line.split('=')[1].strip().replace('"', '').replace("'", '')
-		elif line.strip().startswith('__author__'):
-			author = line.split('=')[1].strip().replace('"', '').replace("'", '')
-		elif line.strip().startswith('__email__'):
-			email = line.split('=')[1].strip().replace('"', '').replace("'", '')
-		elif line.strip().startswith('__source__'):
-			source = line.split('=')[1].strip().replace('"', '').replace("'", '')
-		elif line.strip().startswith('__description__'):
-			description = line.split('=')[1].strip().replace('"', '').replace("'", '')
-		elif None not in (version, author, email, source, description):
-			break
+def read (*args):
+	return open(os.path.join(*[os.path.dirname(__file__)] + list(args)), encoding = 'utf-8').read().strip()
 
-with open('docs/README.rst', encoding = 'utf-8') as f:
-    readme = f.read().strip()
-
-with open('LICENSE', encoding = 'utf-8') as f:
-	license = f.read().strip()
+for i in read(name, '__init__.py').splitlines():
+	if i.strip().startswith('__version__'):
+		version = i.split('=')[1].strip().replace('"', '').replace("'", '')
+	elif i.strip().startswith('__author__'):
+		author = i.split('=')[1].strip().replace('"', '').replace("'", '')
+	elif i.strip().startswith('__email__'):
+		email = i.split('=')[1].strip().replace('"', '').replace("'", '')
+	elif i.strip().startswith('__source__'):
+		source = i.split('=')[1].strip().replace('"', '').replace("'", '')
+	elif i.strip().startswith('__description__'):
+		description = i.split('=')[1].strip().replace('"', '').replace("'", '')
+	elif None not in (version, author, email, source, description):
+		break
 
 setup(
 	name = name,
 	version = version,
-	license = license,
+	license = read('LICENSE'),
 	description = description,
-    long_description = readme,
+    long_description = read('README.rst'),
 	author = author,
 	author_email = email,
 	url = source,
@@ -42,8 +38,9 @@ setup(
 	install_requires = ['setuptools'],
 	keywords = [
 		'ansi', 'color', 'colour', 'console', 'formatting', 
-		'logging', 'terminal', 'terminal colour', 
-		'font', 'strings', 'fontstyle', 'style'
+		'logging', 'terminal', 'terminal colour', 'print', 
+		'font', 'strings', 'fontstyle', 'style', 'styling',
+		'gellel', 'text'
 	],
 	classifiers = [
 		'Development Status :: 4 - Beta',
