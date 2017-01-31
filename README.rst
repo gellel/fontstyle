@@ -177,3 +177,7 @@ usage
     >>> fontstyle.options()
     ['BOLD', 'RED', ...]
     
+notes
+-----
+
+module methods all accept empty function calls. creates example output to provide in terminal examples.
