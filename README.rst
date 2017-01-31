@@ -31,7 +31,9 @@ quick test
 usage
 -----
 
-adding formatting to entire string
+**fontstyle.apply**
+
+adds formatting to the entire string
 
 .. code-block:: python
 
@@ -39,8 +41,7 @@ adding formatting to entire string
     '\033[1mHELLO\033[0m'
     
 
-using multiple formats. 
-separate styles using non alpha or using lists.
+multiple formats can be added using non-alpha characters or using lists.
 
 .. code-block:: python
     
@@ -48,7 +49,9 @@ separate styles using non alpha or using lists.
     '\033[1m\033[91mHELLO\033[0m'
     
 
-erasing certain formatting from entire string
+**fontstyle.erase**
+
+removes specific formatting from the entire string
 
 .. code-block:: python
     
