@@ -47,11 +47,10 @@ python 2.7+
 documentation
 -------------
 
-`@api <https://github.com/gellel/fontstyle/tree/master/docs/>`_.
+`api <https://github.com/gellel/fontstyle/tree/master/docs/>`_
 
 
 authors
 -------
 
-`@gellel <https://github.com/gellel/>`_.
-
+github / `@gellel <https://github.com/gellel/>`_ twitter / `@montywales <https://twitter.com/montywales/>`_
