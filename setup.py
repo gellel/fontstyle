@@ -22,7 +22,7 @@ with open(os.path.join(name, '__init__.py'), encoding = 'utf-8') as f:
 		elif None not in (version, author, email, source, description):
 			break
 
-with open('README.rst', encoding = 'utf-8') as f:
+with open('docs/README.rst', encoding = 'utf-8') as f:
     readme = f.read().strip()
 
 with open('LICENSE', encoding = 'utf-8') as f:
