@@ -3,14 +3,13 @@ fontstyle
 
 | using terminal often? well, i think that the output can be hard to read.
 | like me, maybe you need something to break up the text? you know, make it stand out?
-| this module is for you!add some formatting for easier printing!
+| this module is for you! add some formatting for easier printing!
 
 
 installation
 ------------
 
 | supports package install using github and pypi
-|
 
 .. code-block:: console
     
@@ -28,7 +27,6 @@ quick test
 ----------
 
 | accepts multiple arguments. see documentation for formatting.
-|
 
 .. code-block:: console
 
@@ -39,10 +37,9 @@ authors
 -------
 
 | `@gellel <https://github.com/gellel/>`__
-|
+
 
 documentation
 -------------
 
 | `fontstyle methods <https://github.com/gellel/fontstyle/tree/master/docs>`__
-|
