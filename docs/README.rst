@@ -5,7 +5,7 @@ fontstyles modules has a few referrential constants. these generally contain esc
 
 **fontstyle.COLORS**
 
-*dictionary reference for colour escape sequences*
+*dictionary reference for colour escape sequences.*
 
 .. code-block:: python
 
@@ -14,7 +14,7 @@ fontstyles modules has a few referrential constants. these generally contain esc
 
 **fontstyle.FORMATTING**
 
-*dictionary reference for font weights and styling escape sequences*
+*dictionary reference for font weights and styling escape sequences.*
 
 .. code-block:: python
 
@@ -23,12 +23,48 @@ fontstyles modules has a few referrential constants. these generally contain esc
 
 **fontstyle.STYLES**
 
-*dictionary reference for both font colours and styling escape sequences*
+*dictionary reference for both font colours and styling escape sequences.*
 
 .. code-block:: python
 
     >>> fontstyle.STYLES
     { 'BLACK': '\033[30m', ..., 'BLINK': '\033[5m', ... }
+
+**fontstyle.BEAUTIFICATION**
+
+*regular expression pattern for substring formatting. used in 'pretty' and 'prettify'.*
+
+.. code-block:: python
+
+    >>> fontstyle.BEAUTIFICATION
+    r'\{[^\{]+\}\([^\(]+\)'
+
+**fontstyle.ESCAPES**
+
+*regular expression pattern for finding ansi escape strings.*
+
+.. code-block:: python
+
+    >>> fontstyle.ESCAPES
+    r'\x1b[^m]*m'
+
+**fontstyle.STRSTYLE**
+
+*regular expression pattern for finding formatting reference strings.*
+
+.. code-block:: python
+
+    >>> fontstyle.STRSTYLE
+    r'\((.*?)\)'
+
+**fontstyle.STRSET**
+
+*regular expression pattern for finding substrings requiring formatting.*
+
+.. code-block:: python
+
+    >>> fontstyle.STRSTYLE
+    r'\((.*?)\)'
 
 
 methods
