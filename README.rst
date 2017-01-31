@@ -7,13 +7,18 @@ using terminal often? find it hard to read? maybe you need something to break up
 installation
 ------------
 
-pip install
+**pip**
+
+*using command line. requires pip*
 
 .. code-block:: console
 
     $ pip install fontstyle --upgrade
 
-git install
+
+**git**
+
+*using command line. requires git*
 
 .. code-block:: console
 
@@ -24,6 +29,9 @@ git install
 
 quick test
 ----------
+
+*using command line. accepts multiple arguments. uses module 'beautification' syntax for formatting.*
+
 
 .. code-block:: console
 
