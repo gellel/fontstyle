@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: fontstyle
+Version: 1.0.4
+Summary: Simple package for terminal colour strings.
+Home-page: https://github.com/gellel/fontstyle/
+Author: gellel
+Author-email: lindsay.gelle@gmail.com
+License: Type license() to see the full license text
+Description: UNKNOWN
+Keywords: ansi,color,colour,console,formatting,logging,terminal,terminal colour
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: Fonts
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Markup

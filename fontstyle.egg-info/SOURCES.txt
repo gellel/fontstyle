@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+fontstyle/__init__.py
+fontstyle/__main__.py
+fontstyle/core.py
+fontstyle.egg-info/PKG-INFO
+fontstyle.egg-info/SOURCES.txt
+fontstyle.egg-info/dependency_links.txt
+fontstyle.egg-info/requires.txt
+fontstyle.egg-info/top_level.txt

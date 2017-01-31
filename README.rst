@@ -30,7 +30,7 @@ quick test
 |
 .. code-block:: console
 
-    $ python fontstyle '{hello world}(bold/red)'
+    $ python -m fontstyle '{hello world}(bold/red)'
 
 
 authors
