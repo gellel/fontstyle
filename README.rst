@@ -6,6 +6,12 @@ fontstyle
 | this module is for you! add some formatting to strings to make for easier printing!
 
 
+requirements
+------------
+
+| built using python 2.7. 
+|
+
 installation
 ------------
 
@@ -36,10 +42,10 @@ quick test
 authors
 -------
 
-| github / `@gellel <https://github.com/gellel/>`__
+| github / `@gellel <https://github.com/gellel/>`_
 
 
 documentation
 -------------
 
-| `fontstyle methods <https://github.com/gellel/fontstyle/tree/master/docs>`__
+| `fontstyle methods <https://github.com/gellel/fontstyle/tree/master/docs>`_
