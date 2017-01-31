@@ -50,7 +50,7 @@ fontstyles modules has a few referrential constants. these generally contain esc
 
 **fontstyle.STRSTYLE**
 
-*regular expression pattern for finding formatting reference strings.*
+*regular expression pattern for finding formatting reference substrings.*
 
 .. code-block:: python
 
