@@ -15,7 +15,9 @@ import re
 
 __all__ = ['apply', 'erase', 'preserve', 'contains', 'patternize', 
 	'normalize', 'strip', 'pretty', 'ugly', 'prettify', 
-	'uglify', 'escapes', 'numbers', 'options', 'STYLES']
+	'uglify', 'escapes', 'numbers', 'options', 'STYLES', 
+	'COLORS', 'FORMATTING', 'BEAUTIFICATION', 'ESCAPES',
+	'STRSTYLE', 'STRSET']
 
 ##################################
 ### Font formatting references ###
