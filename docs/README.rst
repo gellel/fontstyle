@@ -81,7 +81,7 @@ fontstyles module accepts empty arguments in listed api. use empty for example o
     >>> fontstyle.apply('HELLO', 'bold')
     '\033[1mHELLO\033[0m'
 
-*multiple formats can be supplied. split format references by non-alpha characters in strings. accepts sequences of strings too.*
+*multiple formats can be supplied. split format references by non-alpha characters in strings. accepts sequences of strings.*
 
 .. code-block:: python
     
@@ -90,7 +90,7 @@ fontstyles module accepts empty arguments in listed api. use empty for example o
 
 **fontstyle.erase**
 
-*removes specific formatting from the entire argument string.*
+*removes specific formatting from the entire argument string. split format references by non-alpha characters in strings. accepts sequences of strings.*
 
 .. code-block:: python
     
@@ -99,7 +99,7 @@ fontstyles module accepts empty arguments in listed api. use empty for example o
 
 **fontstyle.preserve**
 
-*removes all formatting from the entire argument string, keeping only the supplied argument references.*
+*removes all formatting from the entire argument string, keeping only the supplied argument references. split format references by non-alpha characters in strings. accepts sequences of strings.*
 
 .. code-block:: python
     
@@ -117,7 +117,7 @@ fontstyles module accepts empty arguments in listed api. use empty for example o
     
 **fontstyle.patternize**
 
-*adds 'beautification` syntax to argument string. syntax used in 'pretty' and 'prettify' function*
+*adds 'beautification` syntax to argument string. syntax used in 'pretty' and 'prettify' function. split format references by non-alpha characters in strings. accepts sequences of strings.*
 
 .. code-block:: python
     
