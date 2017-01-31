@@ -30,8 +30,8 @@ quick test
 usage
 -----
 
-|fontstyles module accepts empty arguments in all functions. 
-|empty arguments for most functions return example output.
+| fontstyles module accepts empty arguments in all.
+| empty arguments for most functions return example output.
 
 **fontstyle.apply**
 
@@ -42,7 +42,8 @@ usage
     >>> fontstyle.apply('HELLO', 'bold')
     '\033[1mHELLO\033[0m'
 
-*multiple formats can be supplied. split format references by non-alpha characters in strings. accepts sequences of strings too.*
+| *multiple formats can be supplied.* 
+| *split format references by non-alpha characters in strings. accepts sequences of strings too.*
 
 .. code-block:: python
     
