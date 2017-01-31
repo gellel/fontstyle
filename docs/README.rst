@@ -1,5 +1,5 @@
 constants
----------
+=========
 
 fontstyles modules has a few referrential constants. these generally contain escape sequences for ansi formatting.
 
@@ -32,9 +32,9 @@ fontstyles modules has a few referrential constants. these generally contain esc
 
 
 methods
--------
+=======
 
-fontstyles module accepts empty arguments in listed api. empty arguments for most functions return example output to assist in formatting string output.
+fontstyles module accepts empty arguments in listed api. use empty for example output.
 
 **fontstyle.apply**
 
