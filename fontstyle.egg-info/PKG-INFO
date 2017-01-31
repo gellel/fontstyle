@@ -1,13 +1,13 @@
 Metadata-Version: 1.1
 Name: fontstyle
-Version: 1.0.4
-Summary: Simple package for terminal colour strings.
+Version: 1.0.5
+Summary: Formats strings for output in terminal.
 Home-page: https://github.com/gellel/fontstyle/
 Author: gellel
 Author-email: lindsay.gelle@gmail.com
 License: Type license() to see the full license text
 Description: UNKNOWN
-Keywords: ansi,color,colour,console,formatting,logging,terminal,terminal colour
+Keywords: ansi,color,colour,console,formatting,logging,terminal,terminal colour,font,strings,fontstyle,style
 Platform: UNKNOWN
 Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers
