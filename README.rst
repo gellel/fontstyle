@@ -31,7 +31,7 @@ quick test
 usage
 -----
 
-**fontstyle.apply**
+*fontstyle.apply*
 
 adds formatting to the entire string
 
@@ -49,14 +49,23 @@ multiple formats can be added using non-alpha characters or using lists.
     '\033[1m\033[91mHELLO\033[0m'
     
 
-**fontstyle.erase**
+*fontstyle.erase*
 
 removes specific formatting from the entire string
 
 .. code-block:: python
     
-    >>> fontstyle.apply('\033[1m\033[91mHELLO\033[0m', 'red')
+    >>> fontstyle.erase('\033[1m\033[91mHELLO\033[0m', 'red')
     '\033[5mHELLO\033[0m'
     
 
+*fontstyle.preserve*
+
+removes all formatting from the entire string, keeping only the supplied argument references 
+
+.. code-block:: python
+    
+    >>> fontstyle.preserve('\033[1m\033[91mHELLO\033[0m', 'red')
+    '\033[5mHELLO\033[0m'
+    
 
