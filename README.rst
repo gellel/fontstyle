@@ -1,6 +1,3 @@
-.. role:: red
-
-
 fontstyle
 =========
 Terminal strings can be hard to read. Add some formatting!
@@ -39,8 +36,15 @@ adding formatting to entire string
 .. code-block:: python
 
     >>> fontstyle.apply('HELLO', 'bold')
-    '\033[91mHELLO\033[0m'
-    
-    :red:`HELLO`
+    '\033[1mHELLO\033[0m'
 
+using multiple formatting
+
+.. code-block:: python
+    
+    >>> fontstyle.apply('HELLO', 'bold/red')
+    '\033[1m\033[91mHELLO\033[0m'
+    
+    >>> fontstyle.apply('HELLO', ['BOLD'])
+     '\033[1mHELLO\033[0m'
 
