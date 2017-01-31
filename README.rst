@@ -5,13 +5,13 @@ Terminal strings can be hard to read. Add some formatting!
 installation
 ------------
 
-pip
+using pip
 
 .. code-block:: console
     
     $ pip install fontstyle --upgrade
 
-git
+using git
 
 .. code-block:: console
 
@@ -31,9 +31,9 @@ quick test
 usage
 -----
 
-*fontstyle.apply*
+**fontstyle.apply**
 
-adds formatting to the entire string
+*adds formatting to the entire string*
 
 .. code-block:: python
 
@@ -41,7 +41,7 @@ adds formatting to the entire string
     '\033[1mHELLO\033[0m'
     
 
-multiple formats can be added using non-alpha characters or using lists.
+*multiple formats can be supplied. split formats by non-alpha characters in strings. accepts sequences too.*
 
 .. code-block:: python
     
