@@ -33,8 +33,10 @@ quick test
 authors
 -------
 
-lindsay gelle / `@gellel <http://gellel.github.io/about/>`__
+lindsay gelle / `@gellel <https://github.com/gellel/>`__
 
 
 documentation
 -------------
+
+module api / `fontstyles <http://gellel.github.io/about/>`__
