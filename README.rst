@@ -32,14 +32,14 @@ usage
 
 **fontstyle.apply**
 
-*adds formatting to the entire string.*
+*adds formatting to the entire argument string.*
 
 .. code-block:: python
 
     >>> fontstyle.apply('HELLO', 'bold')
     '\033[1mHELLO\033[0m'
 
-*multiple formats can be supplied. split formats by non-alpha characters in strings. accepts sequences too.*
+*multiple formats can be supplied. split format references by non-alpha characters in strings. accepts sequences of strings too.*
 
 .. code-block:: python
     
@@ -48,7 +48,7 @@ usage
 
 **fontstyle.erase**
 
-*removes specific formatting from the entire string.*
+*removes specific formatting from the entire argument string.*
 
 .. code-block:: python
     
@@ -57,7 +57,7 @@ usage
 
 **fontstyle.preserve**
 
-*removes all formatting from the entire string, keeping only the supplied argument references.*
+*removes all formatting from the entire argument string, keeping only the supplied argument references.*
 
 .. code-block:: python
     
