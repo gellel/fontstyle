@@ -1,15 +1,15 @@
 fontstyle
 =========
 
-| terminal output can be hard to read.
-| maybe you need something to break up the text?
-| add some formatting for easier printing!
+| using terminal often? well, i think that the output can be hard to read.
+| like me, maybe you need something to break up the text? you know, make it stand out?
+| this module is for you!add some formatting for easier printing!
 
 
 installation
 ------------
 
-| supports installation using both github and pypi
+| supports package install using github and pypi
 |
 
 .. code-block:: console
@@ -27,7 +27,7 @@ installation
 quick test
 ----------
 
-| test your install using the following command
+| accepts multiple arguments. see documentation for formatting.
 |
 
 .. code-block:: console
@@ -38,10 +38,11 @@ quick test
 authors
 -------
 
-`@gellel <https://github.com/gellel/>`__
-
+| `@gellel <https://github.com/gellel/>`__
+|
 
 documentation
 -------------
 
- `fontstyles <https://github.com/gellel/fontstyle/tree/master/docs>`__
+| `fontstyle methods <https://github.com/gellel/fontstyle/tree/master/docs>`__
+|
