@@ -6,26 +6,31 @@ from codecs import open
 import os
 
 name = 'fontstyle'
-author = email = source = version = None
+author = email = source = version = description = long_description = None
 
 with open(os.path.join(name, '__init__.py'), encoding = 'utf-8') as f:
-    for line in f:
-        if line.strip().startswith('__version__'):
-            version = line.split('=')[1].strip().replace('"', '').replace("'", '')
-        elif line.strip().startswith('__author__'):
-            author = line.split('=')[1].strip().replace('"', '').replace("'", '')
-        elif line.strip().startswith('__email__'):
-            email = line.split('=')[1].strip().replace('"', '').replace("'", '')
-        elif line.strip().startswith('__source__'):
-            source = line.split('=')[1].strip().replace('"', '').replace("'", '')
-        elif None not in (version, author, email, source):
-            break
+	for line in f:
+		if line.strip().startswith('__version__'):
+			version = line.split('=')[1].strip().replace('"', '').replace("'", '')
+		elif line.strip().startswith('__author__'):
+			author = line.split('=')[1].strip().replace('"', '').replace("'", '')
+		elif line.strip().startswith('__email__'):
+			email = line.split('=')[1].strip().replace('"', '').replace("'", '')
+		elif line.strip().startswith('__source__'):
+			source = line.split('=')[1].strip().replace('"', '').replace("'", '')
+		elif line.strip().startswith('__description__'):
+			description = line.split('=')[1].strip().replace('"', '').replace("'", '')
+		elif line.strip().startswith('__long_description__'):
+			long_description = line.split('=')[1].strip().replace('"', '').replace("'", '')
+		elif None not in (version, author, email, source, description, long_description):
+			break
 
 setup(
 	name = name,
 	version = str(version),
 	license = str(license),
-	description = 'Formats strings for output in terminal.',
+	description = str(description),
+	long_description = str(long_description),
 	author = str(author),
 	author_email = str(email),
 	url = str(source),

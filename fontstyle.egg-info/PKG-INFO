@@ -1,7 +1,7 @@
 Metadata-Version: 1.1
 Name: fontstyle
-Version: 1.0.5
-Summary: Formats strings for output in terminal.
+Version: 1.0.6
+Summary: Simplifies formatting terminal output using Python.
 Home-page: https://github.com/gellel/fontstyle/
 Author: gellel
 Author-email: lindsay.gelle@gmail.com
