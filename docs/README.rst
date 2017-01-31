@@ -191,8 +191,8 @@ fontstyles module accepts empty arguments in listed api. use empty for example o
     
     >>> fontstyle.uglify('\033[91mHELLO\033[0m', '\033[94mWORLD\033[0m')
     ['HELLO', 'WORLD']
- 
- **fontstyle.numbers**
+    
+**fontstyle.numbers**
 
 *finds integer value for supplied formatting reference.*
 
@@ -200,8 +200,8 @@ fontstyles module accepts empty arguments in listed api. use empty for example o
     
     >>> fontstyle.numbers('BOLD', 'RED', ...)
     [1, 91]
- 
- **fontstyle.escapes**
+
+**fontstyle.escapes**
 
 *finds string escape sequence for supplied formatting reference.*
 
