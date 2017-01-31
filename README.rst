@@ -37,6 +37,7 @@ adding formatting to entire string
     >>> fontstyle.apply('HELLO', 'bold')
     '\033[1mHELLO\033[0m'
     
+
 using multiple formats. 
 separate styles using non alpha or using lists.
 
@@ -44,8 +45,11 @@ separate styles using non alpha or using lists.
     >>> fontstyle.apply('HELLO', 'bold/red')
     '\033[1m\033[91mHELLO\033[0m'
     
+
 erasing certain formatting from entire string
 
 .. code-block:: python
     >>> fontstyle.apply('\033[1m\033[91mHELLO\033[0m', 'red')
     '\033[5mHELLO\033[0m'
+
+
