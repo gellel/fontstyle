@@ -9,7 +9,7 @@ installation
 
 **pip install**
 
-*using command line. requires pip*
+*using command line. requires pip api.*
 
 .. code-block:: console
 
@@ -18,7 +18,7 @@ installation
 
 **git install**
 
-*using command line. requires git*
+*using command line. requires git api.*
 
 .. code-block:: console
 
@@ -30,7 +30,7 @@ installation
 quick test
 ----------
 
-*using command line. accepts multiple arguments. uses module 'beautification' syntax for formatting.*
+*using command line. accepts multiple arguments. uses modules 'beautification' syntax for formatting. see documentation for more information.*
 
 
 .. code-block:: console
