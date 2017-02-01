@@ -44,7 +44,7 @@ setup(
 		'ansi', 'color', 'colour', 'console', 'formatting', 
 		'logging', 'terminal', 'terminal colour', 'print', 
 		'font', 'strings', 'fontstyle', 'style', 'styling',
-		'gellel', 'text'
+		'gellel', 'text', 'output'
 	],
 	classifiers = [
 		'Development Status :: 4 - Beta',
