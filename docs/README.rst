@@ -219,3 +219,62 @@ fontstyles module accepts empty arguments in listed api. use empty for example o
     >>> fontstyle.options()
     ['BOLD', 'RED', ...]
 
+
+other
+=====
+
+**fontstyle.__version__**
+
+*current module release version.*
+
+.. code-block:: python
+    
+    >>> fontstyle.__version___
+    '1.0.1.2'
+    
+**fontstyle.__author__**
+
+*module contributers.*
+
+.. code-block:: python
+    
+    >>> fontstyle.__author___
+    'gellel'
+
+**fontstyle.__email__**
+
+*module contributers contact information.*
+
+.. code-block:: python
+    
+    >>> fontstyle.__email___
+    'lindsay.gelle@gmail.com'
+
+**fontstyle.__source__**
+
+*project release repository.*
+
+.. code-block:: python
+    
+    >>> fontstyle.__source___
+    'https://github.com/gelle/fontstyle/'
+    
+ 
+**fontstyle.__license__**
+
+*project terms and conditions of use.*
+
+.. code-block:: python
+    
+    >>> fontstyle.__license___
+    'MIT'
+    
+
+**fontstyle.__ansi_reference__**
+
+*ansi formatting documentation.*
+
+.. code-block:: python
+    
+    >>> fontstyle.__ansi_reference___
+    'http://ascii-table.com/ansi-escape-sequences.php'
