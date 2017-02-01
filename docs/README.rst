@@ -117,7 +117,7 @@ fontstyles module accepts empty arguments in listed api. use empty for example o
     
 **fontstyle.patternize**
 
-*adds 'beautification` syntax to argument string. syntax used in 'pretty' and 'prettify' function. split format references by non-alpha characters in strings. accepts sequences of strings.*
+*adds 'beautification' syntax to argument string. syntax used in 'pretty' and 'prettify' function. split format references by non-alpha characters in strings. accepts sequences of strings.*
 
 .. code-block:: python
     
@@ -158,7 +158,7 @@ fontstyles module accepts empty arguments in listed api. use empty for example o
     >>> fontstyle.pretty('{HELLO}(RED)')
     '\033[91mWORLD\033[0m'
 
-*`beautification` syntax can be repeated in the same string to create multiple instances of formatting.*
+*'beautification' syntax can be repeated in the same string to create multiple instances of formatting.*
 
 .. code-block:: python
     
