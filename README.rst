@@ -1,7 +1,7 @@
 fontstyle
 =========
 
-using terminal often? find it hard to read? maybe you need something to break up the text. you know, make it stand out? this module is for you! add some formatting to strings to make for easier printing!
+Sometimes terminal text can be hard to read. Break up the noise with some additional formatting. Add colours, font weights and other styles to make it more readable. Supports substring formatting for extra prettiness!
 
 
 installation
@@ -53,4 +53,4 @@ documentation
 authors
 -------
 
-github / `@gellel <https://github.com/gellel/>`_ twitter / `@montywales <https://twitter.com/montywales/>`_
+github `@gellel <https://github.com/gellel/>`_ / twitter `@montywales <https://twitter.com/montywales/>`_
